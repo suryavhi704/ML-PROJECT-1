@@ -1,4 +1,5 @@
 import sys # to ignore the exception in tests
+from src.logger import logging # to log the error message
 # custom exception class for handling exceptions in the pipeline
 def error_message_details(error,error_details:sys):
     _, _, exc_tb = error_details.exc_info() #on which line the error occurred the variable exc_tb is used to get the traceback
